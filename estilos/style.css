@@ -128,7 +128,7 @@ section#home .home {
     gap: 10px;
 }
 
-.coluna-1 .icones-rede-social .icons {
+.icons {
     width: 30px;
     height: 30px;
 }
@@ -309,14 +309,14 @@ img{
     display: block;
 }
 
-.title {
-    margin-top: -60px;
-}
-
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.title {
+    margin-top: -60px;
 }
 
 .vh-100{
@@ -448,3 +448,142 @@ and radius for circular corner*/
     font-size: 18px;
     margin-top: 2px;
 }
+
+/* contact */
+#contact{
+    background-color: rgb(248, 248, 248);
+}
+.contact-content{
+    flex-direction: column;
+    align-items: stretch;
+}
+.contact-left{
+    margin-bottom: 3rem;
+}
+.contact-left .lead{
+    padding: 0.5rem;
+}
+.contact-left form{
+    margin-top: 3rem;
+}
+.contact-left form .form-control{
+    display: block;
+    margin: 1.6rem 0;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    width: 100%;
+}
+.contact-left form .form-control::placeholder{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-left .btn-submit{
+    padding: 1.4rem 3rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    transition: var(--transition);
+}
+.contact-left .btn-submit:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#insta{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/insta-pic.jpg') center/cover no-repeat fixed;
+    min-height: 65vh;
+}
+#insta .title h2{
+    color: var(--light-color);
+}
+#insta .title h2::after{
+    background-color: var(--light-color);
+}
+.insta-grid > div{
+    height: 400px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.insta-grid > div img{
+    height: 100%;
+    object-fit: cover;
+}
+.insta-grid > div:hover{
+    transform: scale(0.9);
+}
+
+/* ==================
+        Footer
+======================*/
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #aaaaaa;
+}
+
+.footer-geral {
+    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.footer-1 {
+    display: flex;
+    gap: 10px;
+}
+
+.icones-rede-social-2 {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+footer .icons-1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+footer .icones-rede-social {
+    display: flex;
+    gap: 10px;
+
+}
+
+.equipe {
+    margin-top: 15px;
+}
+
+
+
+/* Animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: .1s;
+  }
+  
+  [data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  
+  [data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+  
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
