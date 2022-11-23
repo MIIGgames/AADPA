@@ -162,9 +162,11 @@ section#novidades {
 .novidades .bloco {
     border: 1px solid gray;
     margin: auto;
+    border-radius: 5px;
 }
 
 .novidades .bloco .img-bloco {
+    border-radius: 5px 0px 0px 0px;
     width: 100%;
     height: 30rem;
 }
