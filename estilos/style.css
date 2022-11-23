@@ -138,7 +138,7 @@ section#home .home {
     padding: 1px;
 }
 
-.home .colunas .coluna-2 img {
+.home .colunas .coluna-2 .img-coluna {
     display: block;
     width: 50rem;
     height: 70rem;
@@ -165,10 +165,16 @@ section#novidades {
     border-radius: 5px;
 }
 
+.novidades .bloco:hover {
+    opacity: 0.7;
+}
+
 .novidades .bloco .img-bloco {
     border-radius: 5px 0px 0px 0px;
     width: 100%;
     height: 30rem;
+    background-position: center;
+    background-size: cover;
 }
 
 .novidades .bloco h4, article {
@@ -176,7 +182,7 @@ section#novidades {
 }
 
 /* ==================
-    Section Fotos
+    Section Galeria
 ======================*/
 
 .slide {
@@ -184,6 +190,7 @@ section#novidades {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
+    margin-bottom: 26px;
 }
 .slide-inner {
     position: relative;
@@ -201,7 +208,9 @@ section#novidades {
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
-.slide-item video {
+.slide-item img {
+    background-position: center;
+    background-size: cover;
     display: block;
     height: auto;
     max-width: 100%;
@@ -300,6 +309,10 @@ img{
     display: block;
 }
 
+.title {
+    margin-top: -60px;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -341,4 +354,97 @@ img{
 .portfolio-grid div > img {
     width: 100%;
     background-size: cover;
+}
+
+/* ==================
+    Section Deveres
+======================*/
+
+.deveres {
+    display: none;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5px;
+}
+
+.deveres .bloco {
+    margin: auto;
+    background: gainsboro;
+    color: #828282;
+    font-size: 2.4rem;
+    margin: 15px;
+}
+
+section#deveres {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.main-container{
+    position: relative;
+    width: 1000px;
+    margin: auto;
+}
+/*creating line for timeline*/
+.main-container::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: #000;
+    top:0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+/*Adjusting box of all content*/
+.text-wrapper{
+    padding: 10px 40px;
+    position: relative;
+    width:51%;
+    box-sizing: border-box;
+    margin: 50px 0;
+}
+.text-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    right: -10px;
+    background-color:rgba(0, 0, 0, 0.896);
+    top:15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/*for left events*/
+.left{
+    left: 0;
+}
+/*for right events*/
+.right{
+    left:50%;
+}
+.right::after{
+    left:-10px;
+}
+/*content box colour padding 
+and radius for circular corner*/
+.content{
+    padding: 15px 15px 15px 17px;
+    background-color: #aaaaaa;
+    border-radius: 4px;
+}
+/*setting text property of event heading*/
+.content h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffff;
+    letter-spacing:1px;
+}
+/*setting text property of event content*/
+.content p{
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 2px;
 }
