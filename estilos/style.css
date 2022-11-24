@@ -140,8 +140,10 @@ section#home .home {
 
 .home .colunas .coluna-2 .img-coluna {
     display: block;
-    width: 50rem;
+    width: 60rem;
     height: 70rem;
+    background-size: cover;
+    background-position: center;
 }
 
 /* ==================
