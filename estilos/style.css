@@ -38,6 +38,7 @@ body{
 	list-style: none;
 	display: flex;
 	gap: 0.5rem;
+    margin-right:5rem;
   }
   
   .menu a {
@@ -69,6 +70,16 @@ body{
 .texto-h2 span {
     color: gray;
 }
+
+#login {
+    background: #aaaaaa;
+}
+#login:hover {
+    color: #000;
+    opacity: 0.7;
+}
+
+
 
 /* ==================
       Section Home 
