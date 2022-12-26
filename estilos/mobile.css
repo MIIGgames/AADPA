@@ -154,9 +154,21 @@
 
     .footer-geral {
         flex-direction: column;
+        display: flex;
+
+    }
+
+    .footer-gay {
+        flex-direction: column;
         margin: 0 auto;
+    }
+
+    .icones-rede-social-2 {
+        margin: 0 auto;
+    }
+
+    .footer .equipe {
         text-align: center;
-        justify-items: center;
     }
 
 }
