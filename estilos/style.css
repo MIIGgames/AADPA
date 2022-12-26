@@ -547,6 +547,12 @@ footer {
     margin-top: 10px;
 }
 
+.footer-gay {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
 .footer-1 {
     display: flex;
     gap: 10px;
